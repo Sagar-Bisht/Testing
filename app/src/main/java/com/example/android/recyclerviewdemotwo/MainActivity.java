@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -78,5 +79,7 @@ public class MainActivity extends AppCompatActivity {
         MyAdaptor adaptor = new MyAdaptor(list,this);
         recycler_view.setHasFixedSize(true);
         recycler_view.setAdapter(adaptor);
+
+        Toast.makeText(this, "Hello Sagar", Toast.LENGTH_SHORT).show();
     }
 }
